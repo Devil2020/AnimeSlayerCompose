@@ -1,6 +1,10 @@
 plugins {
     id 'com.android.application'
     id 'kotlin-android'
+    id 'kotlin-kapt'
+    id 'androidx.navigation.safeargs.kotlin'
+    id 'dagger.hilt.android.plugin'
+    id 'kotlin-android-extensions'
 }
 
 android {
@@ -57,6 +61,24 @@ dependencies {
     implementation "androidx.compose.ui:ui-tooling-preview:$compose_version"
     implementation 'androidx.lifecycle:lifecycle-runtime-ktx:2.4.0'
     implementation 'androidx.activity:activity-compose:1.4.0'
+
+    implementation libraries.kotlin.values()
+
+    implementation libraries.hilt.values()
+    kapt libraries.hiltCompiler.values()
+
+    implementation libraries.life_cycle.values()
+    implementation libraries.navigation.values()
+
+    implementation libraries.pagination3.values()
+
+    implementation libraries.lottie
+    implementation libraries.shimmer
+
+    implementation libraries.retrofit_root.values()
+
+    implementation libraries.responsive_design.values()
+
     testImplementation 'junit:junit:4.+'
     androidTestImplementation 'androidx.test.ext:junit:1.1.3'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'

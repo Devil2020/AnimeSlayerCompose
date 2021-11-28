@@ -1,4 +1,4 @@
-package com.morse.animeslayercompose
+package com.morse.animeslayercompose.ui.screens.splash
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
@@ -10,7 +10,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.tooling.preview.Preview
 import com.morse.animeslayercompose.ui.theme.AnimeSlayerComposeTheme
 
-class MainActivity : ComponentActivity() {
+class SplashActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
